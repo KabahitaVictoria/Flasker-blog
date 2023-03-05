@@ -1,0 +1,15 @@
+--- INSTALL VIRTUAL ENVIRONMENT ---
+python -m venv *name of environment e.g env*
+
+--- ACTIVATE VIRTUAL ENVIRONMENT ---
+source env/Scripts/activate
+
+--- RUN SERVER ---
+flask --app hello.py --debug run
+
+--- CREATE SSH KEY FOR VERSION CONTROL; GIT BASH ---
+# go to hp folder
+mkdir .ssh 
+cd .ssh 
+ssh-keygen.exe #generate ssh key 
+cat id_rsa.pub #get the key
